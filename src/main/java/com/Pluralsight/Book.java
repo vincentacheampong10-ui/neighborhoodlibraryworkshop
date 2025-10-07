@@ -12,6 +12,8 @@ public class Book {
         this.id = id;
         this.isbn = isbn;
         this.title = title;
+        this.isCheckedOut= false;
+        this.checkedOuTo="";
     }
 
     public int getId() {
@@ -35,9 +37,13 @@ public class Book {
     }
 
     public void checkOut(String name) {
+        this.checkedOuTo= name;
+        this.isCheckedOut= true;
     }
 
     public void checkIn() {
+        this.checkedOuTo="";
+        this.isCheckedOut=false;
 
     }
 }
