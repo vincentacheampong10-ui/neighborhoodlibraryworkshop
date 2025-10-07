@@ -72,13 +72,9 @@ public class BookStore {
 
 
         for (Book book: books) {
-            System.out.println(book);
+            book.display();
         }
 
-
-        for (Book book: books) {
-            System.out.println(book);
-        }
 
 
     }
