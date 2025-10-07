@@ -7,7 +7,9 @@ public class Book {
     private boolean isCheckedOut;
     private String checkedOuTo;
 
+    public Book() {
 
+    }
     public Book(int id, String isbn, String title) {
         this.id = id;
         this.isbn = isbn;
